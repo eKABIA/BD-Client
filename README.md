@@ -10,7 +10,7 @@ _On peut obtenir la metéo par le nom de la ville
   *api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml
 _On peut aussi obtenir la meteo par le l'id de la ville 
   *api.openweathermap.org/data/2.5/forecast?id=524901
-_On peut aussi se servir des coordonnées geoographique 
+_On peut aussi se servir des coordonnées geographique 
   *api.openweathermap.org/data/2.5/forecast?lat=35&lon=139 
 _On peut aussi choisr de recevoir les données sous le format de notre choix en fonction de notre utulisation 
  *FORMAT JSON
@@ -43,8 +43,25 @@ _pour une authentification avec une clé secrete
 _pour les requetes envoyant plusieur items ou d'autre page spécifiaue on precise la page ainsi que la taille de la police 
  $ curl 'https://api.github.com/user/repos?page=2&per_page=100'
  
-
+2 DEUX JE CHOISI L'API WEATHER
  
+  requêtes HTTP POST :
+  _jai listé ces requetes car il s'agit de la meme donnée mais convertit ou modifié a la demande du client 
+  
+  api.openweathermap.org/data/2.5/find?q=London
+  api.openweathermap.org/data/2.5/find?q=London&units=metric
+  api.openweathermap.org/data/2.5/find?q=London&units=imperial
+  api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang=zh_cn
+  api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test
+  api.openweathermap.org/data/2.5/find?q=London
+  api.openweathermap.org/data/2.5/find?q=London&units=metric
+  api.openweathermap.org/data/2.5/find?q=London&units=imperial
+  api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang=zh_cn
+  api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test
  
-
+   requêtes HTTP GET:
+  *api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml
+  *api.openweathermap.org/data/2.5/forecast?id=524901
+  *api.openweathermap.org/data/2.5/forecast?lat=35&lon=139
+     
 
