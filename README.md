@@ -26,6 +26,11 @@ _on peut aussi choisir de recoir les données des temperature en differentes uni
   api.openweathermap.org/data/2.5/find?q=London&units=metric
  *FAHRENHEIT
   api.openweathermap.org/data/2.5/find?q=London&units=imperial
-  
+_on peut aussi choisir sous quelle langues recevoir nos données 
+ api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang=zh_cn
+_ceci dit si on code en javascript et que l'on a besoin de données bien rangé dans un fichier json 
+ *api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test
+ 
+ api
 
 
