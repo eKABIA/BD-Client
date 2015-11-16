@@ -31,6 +31,20 @@ _on peut aussi choisir sous quelle langues recevoir nos données
 _ceci dit si on code en javascript et que l'on a besoin de données bien rangé dans un fichier json 
  *api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test
  
- api
+ GitHub api v3
+_pour une authentification basique
+ $ curl -u "username" https://api.github.com
+_pour une authentification avec une clé envoyé dans le lien 
+ $ curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com
+_pour une authentification avec une clé envoyé en parametre
+ $ curl https://api.github.com/?access_token=OAUTH-TOKEN
+_pour une authentification avec une clé secrete
+ $ curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy'
+_pour les requetes envoyant plusieur items ou d'autre page spécifiaue on precise la page ainsi que la taille de la police 
+ $ curl 'https://api.github.com/user/repos?page=2&per_page=100'
+ 
+
+ 
+ 
 
 
