@@ -45,7 +45,7 @@ _pour les requetes envoyant plusieur items ou d'autre page spécifiaue on precis
  
 2 DEUX JE CHOISI L'API WEATHER
  
-  requêtes HTTP POST :
+3  requêtes HTTP POST :
   _jai listé ces requetes car il s'agit de la meme donnée mais convertit ou modifié a la demande du client 
   
   api.openweathermap.org/data/2.5/find?q=London
@@ -59,9 +59,38 @@ _pour les requetes envoyant plusieur items ou d'autre page spécifiaue on precis
   api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang=zh_cn
   api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test
  
-   requêtes HTTP GET:
+ 4  requêtes HTTP GET:
   *api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml
   *api.openweathermap.org/data/2.5/forecast?id=524901
   *api.openweathermap.org/data/2.5/forecast?lat=35&lon=139
      
+5 pour cette question jai essayé de creer une application pour pouvoir avoir une clé mais jai pas reussi " on va mettre ca sur le dos de la fatigue ^^ apres une revision intense de c# !! "
+// ============================================ TEST DES REQUETES PRECEDEMMENT LISTEES ====================
+(sachant que l'on peut faire faire des application web sur mobile avec cordova , angulas js et compagnie je me suis perdu....
+meme si je me dit que vous parliez de natif ...)
+
+        ************************** CONCEPTION APPLICATION CLIENTE
+MOBILE
+http://api.openweathermap.org/data/2.5/find?q=London&type=accurate&mode=xml&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/find?q=London&type=like&mode=xml&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/weather?q=London&mode=html&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/weather?q=London&mode=xml&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml&appid=2de143494c0b295cca9337e1e96b00e0
+
+WEB
+http://api.openweathermap.org/data/2.5/weather?q=London,uk&callback=test&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&lang=zh_cn&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/find?q=London&units=imperial&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/find?q=London&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/weather?q=London&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/forecast?lat=35&lon=139&appid=2de143494c0b295cca9337e1e96b00e0
+http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=2de143494c0b295cca9337e1e96b00e0
+ 
+ 
+
+
+
+
+
 
